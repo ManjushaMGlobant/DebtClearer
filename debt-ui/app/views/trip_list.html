@@ -1,0 +1,34 @@
+<div>
+
+	<button ng-click="showForm=true;">Add Trip</button>
+	<ul>
+		<li>Trip 1</li>
+		<li>Trip 2</li>
+		<li>Trip 3</li>
+	</ul>
+
+</div>
+
+<div ng-show = "showForm">
+			<div>
+				<label>Trip Name: </label>
+				<input type="Text" placeholder="Trip Name" ng-model = "Trip.Name"></input> 
+			</div>
+			<div>
+				<label>Description: </label>
+				<input type="Text" placeholder="Description" ng-model = "Trip.Description"></input> 
+			</div>
+			<div>
+				<label>Trip Members: </label>
+				<input type="Text" placeholder="Trip Members" ng-model = "member"></input> 
+				<button ng-click = "addMember();">+</button>
+			</div>
+			<div>
+				<label>Reminder Time: </label>
+				<input type="Date"></input> 
+			</div>
+			<button ng-click="addTrip();">Create Trip</button>
+</div>
+
+
+<!-- {{message}} -->

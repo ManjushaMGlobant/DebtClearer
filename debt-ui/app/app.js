@@ -27,30 +27,11 @@ angular
             
         })
 
-        
-
         .state('dashboard', {
-            url: '/dashboard/Trips',
+            url: '/dashboard',
             views: {
 
-              "header" : { templateUrl: 'views/header.html'
-                            //controller: 'showBalanceCtrl'
-                          }, 
-             "MainView" : { templateUrl: 'views/trip_list.html',
-                            controller: 'TripListCreationCtrl'
-                          }//, 
-           
-           }
-            
-        })
-        .state('All-Debts', {
-            url: '/dashboard/All-Debts',
-            views: {
-
-              "header" : { templateUrl: 'views/header.html'
-                            //controller: 'showBalanceCtrl'
-                          }, 
-             "MainView" : { templateUrl: 'views/all-debts.html'
+          "MainView" : { templateUrl: 'views/trip_details.html'
                             //controller: 'showBalanceCtrl'
                           }//, 
            
