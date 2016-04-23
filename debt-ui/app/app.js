@@ -19,7 +19,7 @@ angular
             url: '/login',
             views: {
 
-          "MainView" : { templateUrl: 'views/login.html'
+          "MainView" : { templateUrl: 'views/loginpage.html'
                             //controller: 'showBalanceCtrl'
                           }//, 
            
