@@ -10,7 +10,7 @@
  */
 angular
   .module('DebtClearer', ['ngRoute', 'ui.router'])
-  .config(function ($stateProvider,$urlRouterProvider,$routeProvider) {
+/*.config(function ($stateProvider,$urlRouterProvider,$routeProvider) {
    $urlRouterProvider.when("", "/login");
     $urlRouterProvider.when("/", "/login");
     $urlRouterProvider.otherwise("/login");
@@ -19,47 +19,13 @@ angular
             url: '/login',
             views: {
 
-          "MainView" : { templateUrl: 'views/login.html'
+          "MainView" : { templateUrl: 'views/balance.html',
                             //controller: 'showBalanceCtrl'
                           }//, 
            
            }
             
         })
-
-        
-
-        .state('dashboard', {
-            url: '/dashboard/Trips',
-            views: {
-
-              "header" : { templateUrl: 'views/header.html'
-                            //controller: 'showBalanceCtrl'
-                          }, 
-             "MainView" : { templateUrl: 'views/trip_list.html',
-                            controller: 'TripListCreationCtrl'
-                          }//, 
-           
-           }
-            
-        })
-        .state('All-Debts', {
-            url: '/dashboard/All-Debts',
-            views: {
-
-              "header" : { templateUrl: 'views/header.html'
-                            //controller: 'showBalanceCtrl'
-                          }, 
-             "MainView" : { templateUrl: 'views/all-debts.html'
-                            //controller: 'showBalanceCtrl'
-                          }//, 
-           
-           }
-            
-        });
-      $urlRouterProvider.otherwise('/login');
-
-      /*
         .state('income', {
             url: '/income',
             views: {
@@ -96,10 +62,9 @@ angular
 
 
     $urlRouterProvider.otherwise('/login');
-*/
+
 })
 
-/*
 .config(function ($provide) {
   $provide.provider("Balance", function () {
     return {
